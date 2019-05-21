@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
 # Module 6 - Problem Set No. 9 - Problem 1
-
+#MAtthew Russell
 """
 READ ALL INFORMATION CAREFULLY AND THEN READ IT AGAIN
 
@@ -21,7 +22,10 @@ OUTPUTS:
 """
 
 def main():
-    pass # remove this line
-    # your code goes here
-
+    name = input("Enter First, Middle, and Last name: ")
+    nlet = str()
+    for l in name.split():
+        nlet = nlet + l[0] + "."
+    nlet = nlet.upper()
+    print("Initials: ", nlet)
 main()

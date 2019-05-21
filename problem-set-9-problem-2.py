@@ -1,5 +1,6 @@
+#!/usr/bin/env python3
 # Module 6 - Problem Set No. 9 - Problem 2
-
+#Matt Russell
 """
 READ ALL INFORMATION CAREFULLY AND THEN READ IT AGAIN
 
@@ -37,7 +38,9 @@ OUTPUTS:
 """
 
 def main():
-    pass # remove this line
-    # your code goes here
-
+    phraseTran = input("Enter sentence to be translated: ")
+    phraseTran = str(phraseTran)
+    Lphrase = phraseTran.split()
+    for i in Lphrase:
+        print(i[1:] + i[0] + "ay", end=" ")
 main()

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Module 6 - Problem Set No. 9 - Problem 4
 
 """
@@ -47,9 +48,13 @@ PROCESSES:
 OUTPUTS: 
 
 """
-
+dict ={ ' ':' ','A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', 'E':'.','F':'..-.', 'G':'--.', 'H':'....','I':'..', 'J':'.---', 'K':'-.-','L':'.-..', 'M':'--', 'N':'-.','O':'---', 'P':'.--.', 'Q':'--.-','R':'.-.', 'S':'...', 'T':'-', 'U':'..-', 'V':'...-', 'W':'.--', 'X':'-..-', 'Y':'-.--', 'Z':'--..', '1':'.----', '2':'..---', '3':'...--', '4':'....-', '5':'.....', '6':'-....', '7':'--...', '8':'---..', '9':'----.','0':'-----', ', ':'--..--', '.':'.-.-.-'} 
 def main():
-    pass # remove this line
-    # your code goes here
+    morse = input("Message to be coded in morse: ")
+    morse = morse.upper()
+    morse = " ".join(morse)
+    dictList = morse.split()
+    for i in dictList:
+        print(dict[i])
 
 main()

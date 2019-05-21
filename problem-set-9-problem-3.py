@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Module 6 - Problem Set No. 9 - Problem 3
 
 """
@@ -33,7 +34,10 @@ OUTPUTS:
 """
 
 def main():
-    pass # remove this line
-    # your code goes here
-
+    numbers = input("enter string of numbers: ")
+    num = numbers.split()
+    for i in num:
+        numbers = int(i)
+        added = sum(numbers)
+        print(added)
 main()
